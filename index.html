@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avanti Store</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+
+      <div class="top-bar">
+        Ganhe <span class="coupon">R$10,00</span> de desconto no seu primeiro
+        pedido. Utilize o cupom <b>DESCONTO10</b>
+      </div>
+
+      <div class="header">
+        <div class="container header-content">
+          <div class="logo">
+            <img src="assets/images/Avanti.png" alt="Avanti" />
+          </div>
+
+          <div class="search">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Digite aqui o que você procura"
+            />
+
+            <button id="searchBtn" class="search-btn">
+              <img src="assets/images/lupa.png" alt="buscar" />
+            </button>
+          </div>
+
+          <div class="search-result" id="searchResult"></div>
+
+          <div class="user-actions">
+            <div class="user">
+              <img src="assets/icons/user.svg" />
+
+              <div class="user-text">
+                <span>Olá,</span>
+                <strong>Nome cliente!</strong>
+              </div>
+            </div>
+
+            <div class="cart">
+              <img src="assets/icons/carrinho.svg" />
+              <span class="cart-badge">2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <div class="container">
+          <ul class="menu-list">
+            <li class="menu-categories" id="menuToggle">
+              <img src="assets/images/menu.png" />
+            </li>
+
+            <li>Departamento</li>
+            <li>Departamento</li>
+            <li>Departamento</li>
+            <li>Departamento</li>
+            <li>Departamento</li>
+            <li>Departamento</li>
+            <li>Departamento</li>
+            <li>Departamento</li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="mega-menu" id="megaMenu">
+        <div class="container">
+          <div class="mega-content">
+            <div class="mega-departments">
+              <div class="department-item">
+                Departamento <img src="assets/icons/arrow.svg" />
+              </div>
+              <div class="department-item">
+                Departamento <img src="assets/icons/arrow.svg" />
+              </div>
+              <div class="department-item">
+                Departamento <img src="assets/icons/arrow.svg" />
+              </div>
+              <div class="department-item">
+                Departamento <img src="assets/icons/arrow.svg" />
+              </div>
+              <div class="department-item">
+                Departamento <img src="assets/icons/arrow.svg" />
+              </div>
+              <div class="department-item">
+                Departamento <img src="assets/icons/arrow.svg" />
+              </div>
+              <div class="department-item">
+                Departamento <img src="assets/icons/arrow.svg" />
+              </div>
+              <div class="department-item">
+                Departamento <img src="assets/icons/arrow.svg" />
+              </div>
+            </div>
+
+            <div class="mega-categories">
+              <div class="category-column">
+                <h4>Categoria</h4>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+              </div>
+
+              <div class="category-column">
+                <h4>Categoria</h4>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+              </div>
+
+              <div class="category-column">
+                <h4>Categoria</h4>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+              </div>
+            </div>
+
+            <div class="mega-banner">
+              <img src="assets/images/bannermenu1.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="menu">
+      <div class="container"></div>
+    </nav>
+
+    <div class="mega-menu" id="megaMenu">
+      <div class="container">
+        <div class="mega-content">
+
+          <div class="mega-departments">
+            <div class="department-item">
+              Departamento <img src="assets/icons/arrow.svg" />
+            </div>
+            <div class="department-item">
+              Departamento <img src="assets/icons/arrow.svg" />
+            </div>
+            <div class="department-item">
+              Departamento <img src="assets/icons/arrow.svg" />
+            </div>
+            <div class="department-item">
+              Departamento <img src="assets/icons/arrow.svg" />
+            </div>
+            <div class="department-item">
+              Departamento <img src="assets/icons/arrow.svg" />
+            </div>
+            <div class="department-item">
+              Departamento <img src="assets/icons/arrow.svg" />
+            </div>
+            <div class="department-item">
+              Departamento <img src="assets/icons/arrow.svg" />
+            </div>
+            <div class="department-item">
+              Departamento <img src="assets/icons/arrow.svg" />
+            </div>
+          </div>
+
+          <div class="mega-categories">
+            <div class="category-column">
+              <h4>Categoria</h4>
+              <p>Categoria</p>
+              <p>Categoria</p>
+              <p>Categoria</p>
+              <p>Categoria</p>
+              <p>Categoria</p>
+              <p>Categoria</p>
+            </div>
+
+            <div class="category-column">
+              <h4>Categoria</h4>
+              <p>Categoria</p>
+              <p>Categoria</p>
+              <p>Categoria</p>
+              <p>Categoria</p>
+              <p>Categoria</p>
+              <p>Categoria</p>
+            </div>
+
+            <div class="category-column">
+              <h4>Categoria</h4>
+              <p>Categoria</p>
+              <p>Categoria</p>
+              <p>Categoria</p>
+              <p>Categoria</p>
+              <p>Categoria</p>
+              <p>Categoria</p>
+            </div>
+          </div>
+
+          <div class="mega-banner">
+            <img src="assets/images/bannermenu1.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="banner">
+      <div class="container banner-content">
+        <div class="banner-image">
+          <img src="assets/images/banner.png" alt="banner" />
+        </div>
+
+        <div class="banner-text">
+          <h1 class="title">SUPER<span class="light">SALE</span></h1>
+          <p>ITENS SELECIONADOS COM ATÉ</p>
+          <h2>50% OFF</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="products-header">
+          <h2>Lançamentos</h2>
+          <a href="#">Ver mais</a>
+        </div>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about-content">
+        <div class="about-image">
+          <img src="assets/images/caneca1.png" alt="Caneca Avanti" />
+        </div>
+
+        <div class="about-text">
+          <h2>LOREM IPSUM</h2>
+
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container features-content">
+        <div class="features-text">
+          <h2>LOREM IPSUM</h2>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <img src="assets/icons/location.svg" />
+            </div>
+
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <img src="assets/icons/location.svg" />
+            </div>
+
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <img src="assets/icons/location.svg" />
+            </div>
+
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+        </div>
+
+        <div class="features-image">
+          <img src="assets/images/caneca2.png" alt="Caneca Avanti" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about-content">
+        <div class="about-image">
+          <img src="assets/images/caneca1.png" alt="Caneca Avanti" />
+        </div>
+
+        <div class="about-text">
+          <h2>LOREM IPSUM</h2>
+
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="products-header">
+          <h2>Lançamentos</h2>
+          <a href="#">Ver mais</a>
+        </div>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <span class="badge">NOVO</span>
+
+                <img src="assets/images/product2.png" alt="produto" />
+
+                <p class="product-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+
+                <p class="old-price">R$ 100,00</p>
+
+                <div class="price-row">
+                  <span class="current-price">R$ 79,90</span>
+
+                  <span class="discount">10% OFF</span>
+                </div>
+
+                <p class="installment">Ou em até 10x de R$ 7,90</p>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-banner">
+      <div class="contact-overlay">
+        <p>
+          Entre em contato conosco e verifique a disponibilidade para sua
+          região!
+        </p>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <p class="newsletter-title">
+          <b>Cadastre-se na nossa</b> <span>newsletter</span>
+        </p>
+
+        <div class="newsletter-box">
+          <input type="text" placeholder="Digite seu nome" />
+
+          <input type="email" placeholder="Digite seu e-mail" />
+
+          <label class="newsletter-check">
+            <input type="checkbox" />
+            Estou de acordo com a Política de Privacidade
+          </label>
+
+          <button>Cadastrar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-main">
+      <div class="footer-container">
+        <div class="footer-box">
+          <div class="footer-logo">
+            <img src="assets/images/Avanti.png" alt="Avanti" />
+
+            <div class="social">
+              <img src="assets/icons/instagram.svg" alt="" />
+              <img src="assets/icons/facebook.svg" alt="" />
+              <img src="assets/icons/youtube-logo.svg" alt="" />
+              <img src="assets/icons/logo-tiktok-svgrepo-com.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Institucional</h4>
+            <p>Sobre Nós</p>
+            <p>Nossas Lojas</p>
+            <p>Privacidade e Segurança</p>
+            <p>Termos e Condições</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Central de ajuda</h4>
+            <p>Fale Conosco</p>
+            <p>Frete e Entrega</p>
+            <p>Trocas e Devoluções</p>
+            <p>Formas de Pagamento</p>
+            <p>FAQ</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Atendimento</h4>
+            <p>Telefone: (00) 1234-5678</p>
+            <p>E-mail: exemplo@email.com.br</p>
+            <p>Segunda a Sábado: 07h às 23h</p>
+          </div>
+        </div>
+
+        <div class="footer-payments">
+          <img src="assets/icons/amex.svg" alt="" />
+          <img src="assets/icons/master.svg" alt="" />
+          <img src="assets/icons/visa.svg" alt="" />
+          <img src="assets/icons/elo.svg" alt="" />
+          <img src="assets/icons/hipercard.svg" alt="" />
+          <img src="assets/icons/paypal.svg" alt="" />
+          <img src="assets/icons/pix.svg" alt="" />
+          <img src="assets/icons/boleto.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p class="footer-text">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+
+        <div class="footer-brands">
+          <img src="assets/icons/sss.svg" alt="Lets Encrypt" />
+          <img src="assets/icons/vtex-pci-200.svg" alt="" />
+          <img src="assets/icons/Frame 14.svg" alt="Avanti" />
+          <img src="assets/icons/VTEX_Logo (1) 1.svg" alt="VTEX" />
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
